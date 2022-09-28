@@ -27,12 +27,12 @@ export default function Login() {
     console.log(email); 
     console.log(password); 
     return (
-        <Grid>
+        <Grid id= "loginContainer">
             <header>
                 <Title />
             </header>
             <Grid>
-                <Paper id="loginBox" elevation={10} style={paperStyle}> 
+                <Paper id="loginBox" elevation={20} style={paperStyle}> 
                     <Grid align='center'>
                         <Avatar style={avatarStyle}><LockPersonRoundedIcon/></Avatar>
                         <h2>Sign In</h2>

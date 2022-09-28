@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom';
-
-
+import { NavigateBefore } from '@mui/icons-material';
 
 const useLogin = () => {
     const [email, setEmail] = useState(""); 
@@ -23,17 +22,12 @@ const useLogin = () => {
                 .then(([body, headers]) => {
                     console.log(body.token); 
                     setJwt(body.token); 
+                    // navigate("/home")
                 });
                 
         }catch(error){
             if(error.response.status === 500) {console.log("ERROR");}
-             
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Something went wrong!',
-                footer: '<a href="">Why do I have this issue?</a>'
-              })
+
         }
          
     }

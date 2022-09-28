@@ -1,3 +1,9 @@
 #loginBox {
     font-family: 'Trebuchet MS';
-  }
+    height: 300px;
+}  
+
+#loginContainer {
+    background-color: #9b89b3;
+    height: 100%;
+}

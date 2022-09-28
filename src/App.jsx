@@ -1,10 +1,12 @@
+import Home from './views/Home/Home';
 import Login from './views/Login/Login'; 
 
 function App() {
   return (
-    <div className="App">
+    <body>     
       <Login/>
-    </div>
+      {/* <Home/> */}
+    </body>
   );
 }
 

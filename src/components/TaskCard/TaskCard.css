@@ -1,0 +1,11 @@
+#card{
+    padding: 4px;
+    border-color: black;
+    width: '18rem'; 
+    background-color: #9577bc;
+}
+
+#card-body{
+    background-color: #9b89b3;
+    border-color: black;
+}
