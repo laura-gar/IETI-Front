@@ -1,6 +1,9 @@
 # IETI - Front 
-## CSS Challenge
-[Css Challenge](https://github.com/laura-gar/IETI-CSSChallenge)
+## User Service
+[User Service](https://github.com/laura-gar/IETI-TaskPlanner-Users)
+
+## Task Service
+[Task Service](https://github.com/laura-gar/IETI-TaskPlanner-Tasks)
 
 ## Getting Started with Create React App
 
