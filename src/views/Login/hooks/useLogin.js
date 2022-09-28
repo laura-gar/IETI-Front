@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom';
 import { NavigateBefore } from '@mui/icons-material';
 
@@ -7,7 +6,7 @@ const useLogin = () => {
     const [email, setEmail] = useState(""); 
     const [password, setPassword] = useState(""); 
     const [jwt, setJwt] = useState(""); 
-    // const navigate = useNavigate(); 
+    const navigate = useNavigate(); 
 
     function sendLoginRequest() {
         try{
@@ -22,7 +21,7 @@ const useLogin = () => {
                 .then(([body, headers]) => {
                     console.log(body.token); 
                     setJwt(body.token); 
-                    // navigate("/home")
+                    navigate("/home"); 
                 });
                 
         }catch(error){
