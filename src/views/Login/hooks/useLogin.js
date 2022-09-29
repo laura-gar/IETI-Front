@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { NavigateBefore } from '@mui/icons-material';
+import { UserContext } from '../../../context/UserContext';
 
 const useLogin = () => {
     const [email, setEmail] = useState(""); 

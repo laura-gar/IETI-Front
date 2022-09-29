@@ -23,9 +23,6 @@ export default function Login() {
         sendLoginRequest,
     } = useLogin(); 
 
-
-    console.log(email); 
-    console.log(password); 
     return (
         <Grid id= "loginContainer">
             <header>
