@@ -12,4 +12,4 @@ root.render(
   </React.StrictMode>
 );
 
-serviceWorker.register(); 
+serviceWorker.register();
