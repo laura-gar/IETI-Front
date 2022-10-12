@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-
 const useLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -20,8 +19,8 @@ const useLogin = () => {
         .then((response) => Promise.all([response.json(), response.header]))
         .then(([body, headers]) => {
           console.log(body.token);
-          localStorage.setItem("USER", JSON.stringify(body)); 
-          console.log("USER", localStorage.getItem("USER")); 
+          localStorage.setItem("USER", JSON.stringify(body));
+          console.log("USER", localStorage.getItem("USER"));
           setJwt(body.token);
           navigate("/home");
         });

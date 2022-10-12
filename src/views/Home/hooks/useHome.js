@@ -17,17 +17,20 @@ const useHome = () => {
     }
   };
 
-  const userID = JSON.parse(localStorage.getItem("USER")).userId; 
+  const userID = JSON.parse(localStorage.getItem("USER")).userId;
 
   const fetchData = useRef(() => {});
 
   fetchData.current = async () => {
-    await fetch(`https://ieti-tasks.herokuapp.com/api/v1/tasks/assignedTo/${userID}`, {
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "get",
-    })
+    await fetch(
+      `https://ieti-tasks.herokuapp.com/api/v1/tasks/assignedTo/${userID}`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "get",
+      }
+    )
       .then((response) => Promise.all([response.json(), response.header]))
       .then(([body, headers]) => {
         const statusArray = ["TODO", "DOING", "REVIEW", "DONE"];

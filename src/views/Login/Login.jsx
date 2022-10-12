@@ -20,13 +20,8 @@ export default function Login() {
   };
   const avatarStyle = { background: "#005245" };
 
-  const {
-    email,
-    setEmail,
-    password,
-    setPassword,
-    sendLoginRequest,
-  } = useLogin();
+  const { email, setEmail, password, setPassword, sendLoginRequest } =
+    useLogin();
 
   return (
     <Grid id="loginContainer">

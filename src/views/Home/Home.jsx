@@ -6,8 +6,7 @@ import "./Home.css";
 import Grid from "@mui/material/Grid";
 
 export default function Home() {
-  const { todo, doing, done, review} =
-    useHome();
+  const { todo, doing, done, review } = useHome();
 
   return (
     <Grid>
