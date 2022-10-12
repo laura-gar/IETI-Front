@@ -1,13 +1,12 @@
 .Title {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-family: 'Trebuchet MS';
-    font-size: large;
-    align-items: baseline;
-    padding: 1em;
-    color: #e8f3f1;
-    background-color: #75497B;
-  }
-  
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: "Trebuchet MS";
+  font-size: large;
+  align-items: baseline;
+  padding: 1em;
+  color: #e8f3f1;
+  background-color: #75497b;
+}

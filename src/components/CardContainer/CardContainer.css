@@ -1,10 +1,9 @@
 h2 {
-    color: #442B48; 
+  color: #442b48;
 }
 
 .myContainer {
-    border: 2px solid #442B48;
-    border-radius: 5px;
-    width: max-content;
-    
+  border: 2px solid #442b48;
+  border-radius: 5px;
+  width: max-content;
 }
