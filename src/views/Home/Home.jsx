@@ -1,16 +1,13 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
 import CardContainer from "../../components/CardContainer/CardContainer";
 import Title from "../../components/Title/Title";
 import useHome from "./hooks/useHome";
 import "./Home.css";
 import Grid from "@mui/material/Grid";
-import { useEffect, useState } from "react";
 
 export default function Home() {
-  const { todo, doing, done, review, isLoading, setLoading, getTask } =
+  const { todo, doing, done, review} =
     useHome();
-  console.log("HOME TODO", todo);
 
   return (
     <Grid>

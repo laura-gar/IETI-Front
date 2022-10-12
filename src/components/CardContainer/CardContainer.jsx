@@ -1,12 +1,11 @@
 import React from "react";
 import TaskCard from "../../components/TaskCard/TaskCard";
-import Title from "../Title/Title";
 import "./CardContainer.css";
 
 const CardContainer = ({ tasks = [], title }) => {
   const hasTasks = tasks.length > 0;
   return (
-    <div class="myContainer">
+    <div className="myContainer">
       <center>
         <h2>{title}</h2>
       </center>

@@ -25,8 +25,6 @@ export default function Login() {
     setEmail,
     password,
     setPassword,
-    jwt,
-    setJwt,
     sendLoginRequest,
   } = useLogin();
 
@@ -67,7 +65,6 @@ export default function Login() {
           </Grid>
           <Grid align="center">
             <ColorButton variant="contained" onClick={() => sendLoginRequest()}>
-              {" "}
               Sign In
             </ColorButton>
           </Grid>
