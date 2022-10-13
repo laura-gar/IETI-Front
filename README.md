@@ -1,17 +1,21 @@
 # IETI - Front
 
-## User Service
+## Part 1: PWA
 
-[User Service](https://github.com/laura-gar/IETI-TaskPlanner-Users)
+### Before implementing PWA
 
-## Task Service
+![](img/01-PWANotImplemented.png)
 
-[Task Service](https://github.com/laura-gar/IETI-TaskPlanner-Tasks)
+### After implementing PWA
 
-## Login
+![](img/02-PWAWorking.png)
 
-![](img/01-Login.png)
+## Part 2: State Management
 
-## Task Dashboard
+### Light mode
 
-![](img/02-TaskDashboard.png)
+![](img/03-lightTheme.png)
+
+### Dark mode
+
+![](img/04-darkTheme.png)
