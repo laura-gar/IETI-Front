@@ -1,9 +1,17 @@
-h2 {
+/* h2 {
   color: #442b48;
+} */
+
+.myContainer-light {
+  color: aliceblue;
+  border: 2px solid #442b48;
+  border-radius: 5px;
+  width: max-content;
 }
 
-.myContainer {
-  border: 2px solid #442b48;
+.myContainer-dark {
+  color: aliceblue;
+  border: 2px solid #312d3a;
   border-radius: 5px;
   width: max-content;
 }

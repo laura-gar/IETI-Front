@@ -1,11 +1,15 @@
-#card {
+#card-dark {
   padding: 4px;
   border-color: black;
   width: "18rem";
-  background-color: #9577bc;
+  background-color: #363c4c;
+  color: aliceblue;
 }
 
-#card-body {
-  background-color: #9b89b3;
+#card-light {
+  padding: 4px;
   border-color: black;
+  width: "18rem";
+  background-color: #836ca1;
+  color: black;
 }

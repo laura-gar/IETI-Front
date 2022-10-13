@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Login.css";
 import Grid from "@mui/material/Grid";
 import { Avatar } from "@mui/material";
@@ -8,9 +8,15 @@ import ColorButton from "../../components/Button/ButtonLogin";
 import Title from "../../components/Title/Title";
 import LockPersonRoundedIcon from "@mui/icons-material/LockPersonRounded";
 import useLogin from "./hooks/useLogin";
+import { ThemeContext } from "../../ThemeContext";
 
 export default function Login() {
-  const paperStyle = {
+  const { state } = useContext(ThemeContext);
+  const avatarStyle = { background: "#005245" };
+  const { email, setEmail, password, setPassword, sendLoginRequest } =
+    useLogin();
+
+  let paperStyle = {
     flexWrap: "wrap",
     padding: 20,
     height: "350px",
@@ -18,18 +24,26 @@ export default function Login() {
     margin: "20px auto",
     background: "#fbeaff",
   };
-  const avatarStyle = { background: "#005245" };
 
-  const { email, setEmail, password, setPassword, sendLoginRequest } =
-    useLogin();
+  if (state.isDarkMode) {
+    paperStyle = {
+      color: "white",
+      flexWrap: "wrap",
+      padding: 20,
+      height: "350px",
+      width: 280,
+      margin: "20px auto",
+      background: "#575068",
+    };
+  }
 
   return (
-    <Grid id="loginContainer">
+    <Grid className={`loginContainer-${state.isDarkMode ? "dark" : "light"}`}>
       <header>
         <Title />
       </header>
       <Grid>
-        <Paper id="loginBox" elevation={20} style={paperStyle}>
+        <Paper elevation={20} style={paperStyle}>
           <Grid align="center">
             <Avatar style={avatarStyle}>
               <LockPersonRoundedIcon />

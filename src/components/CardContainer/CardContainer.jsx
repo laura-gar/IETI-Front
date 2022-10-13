@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import TaskCard from "../../components/TaskCard/TaskCard";
+import { ThemeContext } from "../../ThemeContext";
+
 import "./CardContainer.css";
 
 const CardContainer = ({ tasks = [], title }) => {
+  const { state } = useContext(ThemeContext);
+
   const hasTasks = tasks.length > 0;
   return (
-    <div className="myContainer">
+    <div className={`h-75 myContainer-${state.isDarkMode ? "dark" : "light"}`}>
       <center>
         <h2>{title}</h2>
       </center>
