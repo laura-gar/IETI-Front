@@ -1,0 +1,16 @@
+.button-dark {
+	background: #312d3a; 
+	color: white;
+    border: 0ch;  
+    --bs-btn-hover-bg: #005a7e; 
+}
+
+.btn-primary{
+    --bs-btn-hover-bg: #4F4350; 
+}
+
+.button-light {
+	background:#6c3773;
+	color: aliceblue;
+    border: 0ch;
+}
